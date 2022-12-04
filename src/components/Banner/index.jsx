@@ -37,7 +37,7 @@ function Banner() {
       }}
     >
       <div className="banner__contents">
-        <h1 className="banner__title">{movie.name}</h1>
+        <h1 className="banner__title">{movie?.title || movie?.name || movie?.original_name}</h1>
         <div className="banner__buttons">
           <button className="banner__button banner__play">
             <FaPlay className="banner__icon" /> Play
@@ -47,7 +47,7 @@ function Banner() {
           </button>
         </div>
         <h1 className="banner__description">
-          {movie.overview}
+          {movie?.overview}
         </h1>
       </div>
 
