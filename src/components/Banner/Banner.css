@@ -1,22 +1,62 @@
 .banner {
     position: relative;
-    height: 75vh;
+    height: 80vh;
     object-fit: contain;
     color: white;
 }
 
 .banner__contents {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     margin-left: 30px;
-    padding-top: 200px;
-    height: 60vh;
+    height: 65vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .banner__title {
     font-size: 4rem;
+    line-height: 1.1;
     font-weight: 800;
-    max-width: 45vw;
-    padding-bottom: 0.5rem;
+    max-width: 42vw;
+}
+
+.banner__topTen {
+    display: flex;
+    align-items: center;
+    margin-block: 0.7rem;
+}
+
+.banner__topTen__icon {
+    width: 27px;
+    margin-right: 10px;
+}
+
+.banner__topTen__text {
+    font-size: 1.55rem;
+    font-weight: 600;
+    max-width: 42vw;
+}
+
+.banner__description {
+    --max-lines: 4;
+    --line-height: 1.4;
+
+    max-height: calc(var(--max-lines) * 1rem * var(--line-height));
+    line-height: var(--line-height);
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
+
+    font-size: 0.95rem;
+    font-weight: lighter;
+    width: 35rem;
+    margin-bottom: 1rem;
+    max-width: 42vw;
 }
 
 .banner__buttons {
@@ -33,50 +73,38 @@
     font-weight: 700;
     border-radius: 0.2vw;
     padding-inline: 1.7rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     padding-block: 0.6rem;
+    font-size: 1rem;
 }
 
 .banner__icon {
-    margin-right: 6px;
+    margin-right: 8px;
 }
 .banner__play {
     background-color: hsl(0, 0%, 90%)
 }
 
-.banner__list {
+.banner__play:hover {
+    background-color: hsla(0, 0%, 75%);
+    transition: all 0.2s;
+}
+
+.banner__info {
     background-color: hsl(0, 0%, 32%);
     color: white;
 }
 
-.banner__button:hover {
-    color: white;
-    background-color: hsl(0, 0%, 10%);
+.banner__info:hover {
+    background-color: hsla(0, 0%, 32%, 0.65);
     transition: all 0.2s;
-}
-
-.banner__description {
-    --max-lines: 4;
-    --line-height: 1.5;
-
-    max-height: calc(var(--max-lines) * 1rem * var(--line-height));
-    line-height: var(--line-height);
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: var(--max-lines);
-
-    font-size: 1rem;
-    width: 45rem;
-    padding-top: 1rem;
-    max-width: 30vw;
 }
 
 .banner--fadeBottom {
     height: 15vh;
     background-image: linear-gradient(180deg,
             transparent,
-            hsla(0, 0%, 15%, 0.61),
+            hsla(0, 0%, 0%, 0),
             hsl(0, 0%, 7%)
         );
 }

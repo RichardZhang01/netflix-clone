@@ -3,9 +3,9 @@ import axiosInstance from "../../utils/axios";
 import requests from "../../utils/requests";
 import "./Banner.css";
 
-// import BannerImage from "../../assets/images/banner.jpg";
 import { FaPlay } from "react-icons/fa";
-import { BsPlusLg } from "react-icons/bs";
+import { BsInfoCircle } from "react-icons/bs";
+import TopTen from "../../assets/images/top10.png"
 
 function Banner() {
   const [movie, setMovie] = useState([]);
@@ -13,6 +13,7 @@ function Banner() {
   useEffect(() => {
     async function fetchBannerMovie() {
       const request = await axiosInstance.get(requests.fetchNetflixOriginals);
+      // console.log(request.data.results);
 
       setMovie(
         request.data.results[
@@ -37,18 +38,22 @@ function Banner() {
       }}
     >
       <div className="banner__contents">
-        <h1 className="banner__title">{movie?.title || movie?.name || movie?.original_name}</h1>
+        <h1 className="banner__title">
+          {movie?.title || movie?.name || movie?.original_name}
+        </h1>
+        <div className="banner__topTen">
+          <img className="banner__topTen__icon" src={TopTen} alt="Top 10 icon" />
+          <p className="banner__topTen__text">{`#${Math.floor(Math.random() * 10) + 1} in TV Shows Today`}</p>
+        </div>
+        <h1 className="banner__description">{movie?.overview}</h1>
         <div className="banner__buttons">
           <button className="banner__button banner__play">
             <FaPlay className="banner__icon" /> Play
           </button>
-          <button className="banner__button banner__list">
-            <BsPlusLg className="banner__icon" /> My List
+          <button className="banner__button banner__info">
+            <BsInfoCircle className="banner__icon" /> More Info
           </button>
         </div>
-        <h1 className="banner__description">
-          {movie?.overview}
-        </h1>
       </div>
 
       <div className="banner--fadeBottom" />
