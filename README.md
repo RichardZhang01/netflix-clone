@@ -54,7 +54,7 @@ This application is covered under the [MIT](https://opensource.org/licenses/MIT)
 
 ## <a id="acknowledgements"></a>Acknowledgements
 
-This project was heavily influenced by Sonny Sangha's [Netflix 2.0 with ReactJS](https://www.youtube.com/watch?v=HW5roUF2RLg&list=PLIgQz_XdNZE6ePP4MIrtV4RW5s702ESJc&index=6&t=413s)  build on Youtube. He's a great developer with awesome videos, so thanks to him!
+This project was heavily influenced by Sonny Sangha's [Netflix 2.0 with ReactJS](https://www.youtube.com/watch?v=HW5roUF2RLg&list=PLIgQz_XdNZE6ePP4MIrtV4RW5s702ESJc&index=6&t=413s) build on YouTube. He's a great developer with awesome videos, so thanks to him!
 
 ## <a id="contact"></a>Contact
 
