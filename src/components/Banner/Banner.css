@@ -1,9 +1,8 @@
 .banner {
     position: relative;
-    height: 75vh;
+    height: 82vh;
     object-fit: contain;
     color: white;
-    margin-bottom: 10px;
 }
 
 .banner__contents {
@@ -11,7 +10,7 @@
     margin: 0;
     padding: 0;
     margin-left: 30px;
-    height: 65vh;
+    height: 72vh;
     
     display: flex;
     flex-direction: column;
@@ -53,8 +52,9 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: var(--max-lines);
 
-    font-size: 0.95rem;
+    font-size: 0.97rem;
     font-weight: lighter;
+    color: hsla(0, 0%, 92%, 1);
     width: 35rem;
     margin-bottom: 1rem;
     max-width: 42vw;
@@ -106,6 +106,6 @@
     background-image: linear-gradient(180deg,
             transparent,
             hsla(0, 0%, 0%, 0),
-            hsl(0, 0%, 7%)
+            hsla(0, 0%, 7%, 1)
         );
 }
