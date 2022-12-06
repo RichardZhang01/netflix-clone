@@ -7,7 +7,7 @@
 
 ## Description
 
-This is a work-in-progress application that I am working on that attempts to mimic Netflix's UI. This application will not host any videos, although I may try to link each show/movie to an external video hosting website toward the end of development. I am creating this app to work on some of my front-end skills, and I am having a lot of fun with it so far. This application is powered using the [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction), and hosted using [Firebase](https://firebase.google.com/).
+This is a work-in-progress application that I am working on that attempts to mimic Netflix's UI. This application will not host any videos, although I may try to link each show/movie to an external video hosting website toward the end of development. I am creating this app to work on some of my front-end skills, and I am having a lot of fun with it so far. This application is powered using the [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction), and hosted using [Firebase](https://firebase.google.com/). You can access this (WIP) application [here](https://netflix-clone-e2d22.web.app/).
 
 ## Table of Contents
 
