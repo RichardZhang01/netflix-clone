@@ -1,13 +1,13 @@
 import React from "react";
-import "./HomeScreen.css";
-import Navbar from "../Navbar";
-import Banner from "../Banner";
-import Row from "../Row";
+import "./HomePage.css";
+import Navbar from "../../components/Navbar";
+import Banner from "../../components/Banner";
+import Row from "../../components/Row";
 import requests from "../../utils/requests";
 
-function HomeScreen() {
+function HomePage() {
   return (
-    <div className="homeScreen">
+    <div className="homePage">
       <Navbar />
       <Banner />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
@@ -35,4 +35,4 @@ function HomeScreen() {
   );
 }
 
-export default HomeScreen;
+export default HomePage;
