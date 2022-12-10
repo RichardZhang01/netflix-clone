@@ -13,6 +13,12 @@ function Login() {
         </div>
         <div className="login__gradient" />
       </div>
+
+      <div className="login__body">
+        <>
+          <h1>Unlimited movies, TV shows, and more.</h1>
+        </>
+      </div>
     </div>
   );
 }
