@@ -1,6 +1,6 @@
-.login {
+/* .login {
     position: relative;
-}
+} */
 
 .login__background {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assets/images/backdrop.jpg") center no-repeat;
