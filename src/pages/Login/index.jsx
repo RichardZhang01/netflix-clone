@@ -2,20 +2,13 @@ import React from 'react';
 import './Login.css'
 
 import Hero from '../../components/Hero'
-
-import NetflixLogo from "../../assets/images/netflix-logo.png";
+import Header from '../../components/Header'
 
 function Login() {
   return (
     <div className="login">
         <Hero />
-      {/* <div className="login__background"> */}
-        <div className="login__header">
-          <img className="login__logo" src={NetflixLogo} alt="Netflix logo" />
-          <button className="login__button">Sign In</button>
-        </div>
-        {/* <div className="login__gradient" /> */}
-      {/* </div> */}
+        <Header />
 
       <div className="login__body">
         <>
