@@ -1,0 +1,27 @@
+.heroBody {
+    position: relative;
+    color: white;
+    margin: 0 auto;
+    padding: 125px 0;
+    max-width: 950px;
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroBody>h1 {
+    max-width: 640px;
+    font-size: 4rem;
+    line-height: 1.1;
+}
+
+.heroBody>h2 {
+    max-width: 800px;
+    font-size: 1.625rem;
+    margin-block: 1rem;
+    font-weight: 400;
+}
