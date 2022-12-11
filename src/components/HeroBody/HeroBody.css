@@ -2,26 +2,30 @@
     position: relative;
     color: white;
     margin: 0 auto;
-    padding: 125px 0;
+    padding: 120px 0;
     max-width: 950px;
     width: 100%;
     text-align: center;
+}
 
+.heroBody__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    margin-inline: 50px;
 }
 
-.heroBody>h1 {
+.heroBody__container > h1 {
     max-width: 640px;
     font-size: 4rem;
     line-height: 1.1;
 }
 
-.heroBody>h2 {
+.heroBody__container > h2 {
     max-width: 800px;
     font-size: 1.625rem;
-    margin-block: 1rem;
+    margin: 1rem auto;
     font-weight: 400;
 }

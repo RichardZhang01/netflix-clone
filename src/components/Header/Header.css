@@ -10,13 +10,13 @@
 }
 
 .header__logo {
-    width: 13rem;
+    width: 12.75rem;
     object-fit: contain;
-    margin-left: 35px;
+    margin-left: 38px;
 }
 
 .header__button {
-    margin-right: 35px;
+    margin-right: 45px;
     margin-top: -10px;
     padding: 7px 17px;
 
