@@ -1,11 +1,12 @@
 .heroBody {
-    position: relative;
+    /* position: relative; */
     color: white;
     margin: 0 auto;
     padding: 120px 0;
     max-width: 950px;
     width: 100%;
     text-align: center;
+    z-index: 1111
 }
 
 .heroBody__container {
@@ -28,4 +29,47 @@
     font-size: 1.625rem;
     margin: 1rem auto;
     font-weight: 400;
+}
+
+.heroBody__container > h3 {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.heroBody__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.herobody__form__inputGroup {
+    position: relative;
+}
+
+.herobody__form__label {
+    color: gray;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 5px;
+    transition: 0.2s ease all;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#herobody__form__input {
+    width: 100%;
+    min-width: 500px;
+    height: 70px;
+    padding: 10px 10px 0;
+    box-shadow: none;
+    appearance: none;
+    border: 1px solid hsl(0, 0%, 55%);
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: black;
+    font-size: 16px;
 }
