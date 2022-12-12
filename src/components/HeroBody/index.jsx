@@ -1,6 +1,8 @@
 import React from "react";
 import "./HeroBody.css";
 
+import { BsChevronRight } from "react-icons/bs";
+
 function HeroBody() {
   return (
     <div className="heroBody">
@@ -13,7 +15,7 @@ function HeroBody() {
 
         <form className="heroBody__form">
           <div className="herobody__form__inputGroup">
-            <input type="email" id="herobody__form__input" />
+            <input type="text" id="herobody__form__input" />
             <label
               htmlFor="herobody__form__input"
               className="herobody__form__label"
@@ -21,7 +23,9 @@ function HeroBody() {
               Email Address
             </label>
           </div>
-          <button type="submit">Get Started</button>
+          <button type="submit" className="herobody__form__button">
+            Get Started <BsChevronRight className="herobody__form__button__chevron" />
+          </button>
         </form>
       </div>
     </div>
