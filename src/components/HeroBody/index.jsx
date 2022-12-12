@@ -1,7 +1,6 @@
 import React from "react";
 import "./HeroBody.css";
-
-import { BsChevronRight } from "react-icons/bs";
+import EmailForm from "../EmailForm";
 
 function HeroBody() {
   return (
@@ -13,20 +12,7 @@ function HeroBody() {
           Ready to watch? Enter your email to create or restart your membership.
         </h3>
 
-        <form className="heroBody__form">
-          <div className="herobody__form__inputGroup">
-            <input type="text" id="herobody__form__input" required="true" />
-            <label
-              htmlFor="herobody__form__input"
-              className="herobody__form__label"
-            >
-              Email Address
-            </label>
-          </div>
-          <button type="submit" className="herobody__form__button">
-            Get Started <BsChevronRight className="herobody__form__button__chevron" />
-          </button>
-        </form>
+        <EmailForm />
       </div>
     </div>
   );
