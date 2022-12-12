@@ -70,9 +70,20 @@
 
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 
 .emailForm__button__chevron {
     height: 1.5rem;
     margin-inline: 5px 0;
+}
+
+.emailForm__button:hover,
+.emailForm__button:focus {
+    background-color: hsl(357, 92%, 50%);
+}
+
+.emailForm__button:active {
+    background-color: hsl(357, 92%, 40%);
+    outline: 2px solid hsl(357, 92%, 30%);
 }
