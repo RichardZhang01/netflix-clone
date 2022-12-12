@@ -49,8 +49,18 @@
     position: relative;
 }
 
-/* #herobody__form__input:not(:focus) ~ .herobody__form__label, */
+#herobody__form__input:focus ~ .herobody__form__label,
 #herobody__form__input:not(:focus):valid ~ .herobody__form__label {
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    font-size: 13px;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.herobody__form__label {
+    color: gray;
     position: absolute;
     font-size: 16px;
     left: 10px;
@@ -58,16 +68,6 @@
     transform: translateY(-50%);
     opacity: 1;
     cursor: default;
-}
-
-.herobody__form__label {
-    color: gray;
-    position: absolute;
-    left: 10px;
-    top: 5px;
-    font-size: 13px;
-    font-weight: 500;
-    pointer-events: none;
     transition: 0.2s ease all;
 }
 

@@ -15,7 +15,7 @@ function HeroBody() {
 
         <form className="heroBody__form">
           <div className="herobody__form__inputGroup">
-            <input type="text" id="herobody__form__input" />
+            <input type="text" id="herobody__form__input" required="true" />
             <label
               htmlFor="herobody__form__input"
               className="herobody__form__label"
