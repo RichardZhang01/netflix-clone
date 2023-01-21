@@ -1,0 +1,54 @@
+.storyCard {
+    background-color: black;
+    margin-bottom: 10px;
+    padding: 70px 45px;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.storyCard__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1100px;
+    position: relative;
+}
+
+.storyCard__textContainer {
+    height: 100%;
+    padding: 0 3rem 0 0;
+    width: 53%;
+    z-index: 3;
+    flex: 0 1 auto;
+    color: white;
+}
+
+.storyCard__title {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.storyCard__subtitle {
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin: 0.65em 0 0.25em;
+}
+
+.storyCard__videoContainer {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.storyCard__image {
+    position: relative;
+    z-index: 2;
+    border: 0;
+    height: auto;
+    max-width: 100%;
+}
