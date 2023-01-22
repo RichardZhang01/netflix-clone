@@ -3,7 +3,7 @@ import React from "react";
 import "./HeroBody.css";
 import EmailForm from "../EmailForm";
 
-import { BsChevronRight } from "react-icons/bs";
+// import { BsChevronRight } from "react-icons/bs";
 
 function HeroBody() {
   return (

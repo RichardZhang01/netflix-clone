@@ -4,7 +4,7 @@ import './Login.css'
 import Hero from '../../components/Hero'
 import Header from '../../components/Header'
 import HeroBody from '../../components/HeroBody';
-import StoryCard from '../../components/StoryCard';
+import StoryCardTV from '../../components/StoryCardTV';
 
 function Login() {
   return (
@@ -12,7 +12,7 @@ function Login() {
         <Hero />
         <Header />
         <HeroBody />
-        <StoryCard />
+        <StoryCardTV />
     </div>
   );
 }
