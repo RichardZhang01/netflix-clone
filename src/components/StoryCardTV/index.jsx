@@ -3,18 +3,13 @@ import "./StoryCardTV.css";
 
 import TV from "../../assets/images/tv.png";
 import Video from "../../assets/videos/video-tv-0819.m4v";
+import StoryCardText from "../StoryCardText";
 
 function StoryCardTV() {
   return (
       <div className="storyCardTV">
         <div className="storyCardTV__container">
-          <div className="storyCardTV__textContainer">
-            <h1 className="storyCardTV__title">Enjoy on your TV.</h1>
-            <h2 className="storyCardTV__subtitle">
-              Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
-              players, and more.
-            </h2>
-          </div>
+          <StoryCardText />
           <div className="storyCardTV__videoContainer">
             <img className="storyCardTV__image" src={TV} alt="TV" />
             <video
