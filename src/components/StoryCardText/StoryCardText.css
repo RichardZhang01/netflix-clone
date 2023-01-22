@@ -1,11 +1,18 @@
 .storyCard__textContainer {
     margin: -5% 0;
     height: 100%;
-    padding: 0 3rem 0 0;
-    width: 58%;
+    width: 52%;
     z-index: 3;
     flex: 0 1 auto;
     color: white;
+}
+
+.storyCard__left {
+    padding: 0 3rem 0 0;
+}
+
+.storyCard__right {
+    padding: 0 0 0 3rem;
 }
 
 .storyCard__title {

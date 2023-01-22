@@ -1,8 +1,8 @@
 import React from "react";
 import "./StoryCardTV.css";
 
-import TV from "../../assets/images/tv.png";
-import Video from "../../assets/videos/video-tv-0819.m4v";
+import TVImage from "../../assets/images/tv.png";
+import NetflixVideo from "../../assets/videos/video-tv-0819.m4v";
 import StoryCardText from "../StoryCardText";
 
 function StoryCardTV() {
@@ -12,11 +12,12 @@ function StoryCardTV() {
         <StoryCardText
           headingOneText="Enjoy on your TV."
           headingTwoText="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
+          flipped={true}
         />
         <div className="storyCardTV__videoContainer">
-          <img className="storyCardTV__image" src={TV} alt="TV" />
+          <img className="storyCardTV__image" src={TVImage} alt="TV" />
           <video
-            src={Video}
+            src={NetflixVideo}
             className="storyCardTV__video"
             autoPlay={true}
             playsInline={true}

@@ -5,6 +5,7 @@ import Hero from '../../components/Hero'
 import Header from '../../components/Header'
 import HeroBody from '../../components/HeroBody';
 import StoryCardTV from '../../components/StoryCardTV';
+import StoryCardWatch from '../../components/StoryCardWatch';
 
 function Login() {
   return (
@@ -13,6 +14,7 @@ function Login() {
         <Header />
         <HeroBody />
         <StoryCardTV />
+        <StoryCardWatch />
     </div>
   );
 }
