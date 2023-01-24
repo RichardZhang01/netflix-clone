@@ -7,6 +7,7 @@ import HeroBody from '../../components/HeroBody';
 import StoryCardTV from '../../components/StoryCardTV';
 import StoryCardWatch from '../../components/StoryCardWatch';
 import StoryCardKids from '../../components/StoryCardKids';
+import StoryCardOffline from '../../components/StoryCardOffline';
 
 function Login() {
   return (
@@ -17,6 +18,7 @@ function Login() {
         <StoryCardTV />
         <StoryCardWatch />
         <StoryCardKids />
+        <StoryCardOffline />
     </div>
   );
 }
