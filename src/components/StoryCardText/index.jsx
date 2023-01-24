@@ -5,7 +5,7 @@ function StoryCardText({ headingOneText, headingTwoText, flipped }) {
   return (
     <div
       className={`storyCard__textContainer ${
-        flipped ? "storyCard__left" : "storyCard__right"
+        flipped ? "storyCard__right" : "storyCard__left"
       }`}
     >
       <h1 className="storyCard__title">{headingOneText}</h1>

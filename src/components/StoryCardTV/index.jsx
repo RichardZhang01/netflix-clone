@@ -12,7 +12,7 @@ function StoryCardTV() {
         <StoryCardText
           headingOneText="Enjoy on your TV."
           headingTwoText="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
-          flipped={true}
+          flipped={false}
         />
         <div className="storyCardTV__videoContainer">
           <img className="storyCardTV__image" src={TVImage} alt="TV" />
