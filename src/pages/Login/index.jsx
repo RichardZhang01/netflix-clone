@@ -8,6 +8,7 @@ import StoryCardTV from '../../components/StoryCardTV';
 import StoryCardWatch from '../../components/StoryCardWatch';
 import StoryCardKids from '../../components/StoryCardKids';
 import StoryCardOffline from '../../components/StoryCardOffline';
+import StoryCardFAQ from '../../components/StoryCardFAQ';
 
 function Login() {
   return (
@@ -19,6 +20,7 @@ function Login() {
         <StoryCardWatch />
         <StoryCardKids />
         <StoryCardOffline />
+        <StoryCardFAQ />
     </div>
   );
 }
