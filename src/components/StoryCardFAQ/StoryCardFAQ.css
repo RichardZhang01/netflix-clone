@@ -1,0 +1,25 @@
+.storyCardFAQ {
+    padding: 70px 45px;
+    background: black;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.storyCardFAQ__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.storyCardFAQ__heading {
+    font-size: 3.125rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 0.4em;
+}
+
+.storyCardFAQ__FAQContainer {
+    width: 75%;
+    height: 200px;
+    background-color: rgb(46, 43, 43);
+}
