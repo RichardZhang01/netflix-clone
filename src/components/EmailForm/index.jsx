@@ -3,7 +3,7 @@ import "./EmailForm.css";
 
 import { BsChevronRight } from "react-icons/bs";
 
-function EmailForm() {
+function EmailForm({ inputID }) {
   const [emailError, setEmailError] = useState(null);
 
   const emailErrorHandler = (event) => {
@@ -27,11 +27,12 @@ function EmailForm() {
         <div className="emailForm__inputGroup">
           <input
             type="text"
-            id="emailForm__input"
+            id={inputID}
+            class="emailForm__input"
             onBlur={emailErrorHandler}
             required={true}
           />
-          <label htmlFor="emailForm__input" className="emailForm__label">
+          <label htmlFor={inputID} className="emailForm__label">
             Email Address
           </label>
           <button type="submit" className="emailForm__button">
@@ -39,7 +40,9 @@ function EmailForm() {
             <BsChevronRight className="emailForm__button__chevron" />
           </button>
         </div>
-        {emailError && <div className="emailForm__inputError__text">{emailError}</div>}
+        {emailError && (
+          <div className="emailForm__inputError__text">{emailError}</div>
+        )}
       </div>
     </form>
   );

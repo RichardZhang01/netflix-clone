@@ -42,7 +42,9 @@ function StoryCardFAQ() {
             );
           })}
         </ul>
-        <EmailForm />
+        <EmailForm
+          inputID="faqEmailForm"
+        />
       </div>
     </div>
   );

@@ -11,8 +11,9 @@ function HeroBody() {
       <div className="heroBody__container">
         <h1>Unlimited movies, TV shows, and more.</h1>
         <h2>Watch anywhere. Cancel anytime.</h2>
-
-        <EmailForm />
+        <EmailForm
+          inputID="heroBodyEmailForm"
+        />
       </div>
     </div>
   );
