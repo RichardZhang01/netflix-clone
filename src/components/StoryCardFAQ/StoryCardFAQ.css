@@ -2,7 +2,7 @@
     padding: 70px 45px;
     background: black;
     color: white;
-    margin-bottom: 8px;
+    border-bottom: 8px solid hsl(0, 0%, 13%);
 }
 
 .storyCardFAQ__container {

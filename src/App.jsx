@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Home from "./pages/Home";
-import Login from "./pages/Login";
+import Landing from "./pages/Landing";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={isLoggedIn ? <Home /> : <Navigate to="/login" />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/landing" element={<Landing />} />
         </Routes>
       </Router>
     </div>

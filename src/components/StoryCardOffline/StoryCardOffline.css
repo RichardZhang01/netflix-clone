@@ -1,7 +1,7 @@
 .storyCardOffline {
     background-color: black;
-    margin-bottom: 8px;
     padding: 70px 45px;
+    border-bottom: 8px solid hsl(0, 0%, 13%);
 }
 
 .storyCardOffline__container {

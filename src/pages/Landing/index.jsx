@@ -1,5 +1,5 @@
 import React from 'react';
-import './Login.css'
+import './Landing.css'
 
 import Hero from '../../components/Hero'
 import Header from '../../components/Header'
