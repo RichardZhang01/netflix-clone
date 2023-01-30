@@ -2,24 +2,44 @@ import React, { useState } from "react";
 import "./EmailForm.css";
 
 import { BsChevronRight } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 
 function EmailForm({ inputID }) {
   const [emailError, setEmailError] = useState(null);
+  const [emailInput, setEmailInput] = useState("");
+  const navigateTo = useNavigate();
 
   const emailErrorHandler = (event) => {
-    const inputEmail = event.target.value.trim();
+    const email = emailInput.trim();
     const re =
       /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
-    
-    if (!inputEmail) return setEmailError('Email is required!')
 
-    if (!re.test(inputEmail)) return setEmailError('Please enter a valid email address')
+    if (!email) return setEmailError("Email is required!");
 
-    setEmailError(null)
-  }
+    if (!re.test(email))
+      return setEmailError("Please enter a valid email address");
+
+    setEmailError(null);
+  };
+
+  const emailChangeHandler = (event) => {
+    const email = event.target.value;
+    setEmailInput(email);
+  };
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+    const email = emailInput.trim();
+    const re =
+      /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
+
+    if (re.test(email)) {
+      navigateTo("/signin", { state: { email: email } });
+    }
+  };
 
   return (
-    <form className="emailForm">
+    <form className="emailForm" onSubmit={submitHandler}>
       <h3 className="emailForm__title">
         Ready to watch? Enter your email to create or restart your membership.
       </h3>
@@ -28,8 +48,10 @@ function EmailForm({ inputID }) {
           <input
             type="text"
             id={inputID}
-            class="emailForm__input"
+            className="emailForm__input"
+            value={emailInput}
             onBlur={emailErrorHandler}
+            onChange={emailChangeHandler}
             required={true}
           />
           <label htmlFor={inputID} className="emailForm__label">
