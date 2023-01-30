@@ -9,6 +9,7 @@ import StoryCardWatch from '../../components/StoryCardWatch';
 import StoryCardKids from '../../components/StoryCardKids';
 import StoryCardOffline from '../../components/StoryCardOffline';
 import StoryCardFAQ from '../../components/StoryCardFAQ';
+import Footer from '../../components/Footer';
 
 function Login() {
   return (
@@ -21,6 +22,7 @@ function Login() {
         <StoryCardKids />
         <StoryCardOffline />
         <StoryCardFAQ />
+        <Footer />
     </div>
   );
 }

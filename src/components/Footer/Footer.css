@@ -1,0 +1,26 @@
+.footer {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2rem 4rem;
+
+    color: hsl(0, 0%, 45%);
+    font-size: 1.125rem;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+}
+
+.footer > a {
+    color: inherit;
+    margin-left: 5px;
+
+    display: flex;
+    align-items: center;
+}
+
+.footer > a:hover,
+.footer > a:active,
+.footer > a:focus {
+    color: hsl(0, 0%, 55%);
+}
