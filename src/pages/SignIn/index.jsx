@@ -4,6 +4,7 @@ import "./SignIn.css";
 import { useLocation } from "react-router-dom";
 import Hero from "../../components/Hero";
 import Header from "../../components/Header";
+import SignInForm from "../../components/SignInForm";
 
 function SignIn() {
   const location = useLocation();
@@ -14,6 +15,7 @@ function SignIn() {
     <div className="signin">
       <Hero />
       <Header />
+      <SignInForm />
     </div>
   );
 }
