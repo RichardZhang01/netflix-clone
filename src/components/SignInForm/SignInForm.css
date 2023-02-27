@@ -88,14 +88,6 @@
     transition: 0.1s ease all;
 }
 
-/* .signInForm__emailLabel {
-    top: 37%;
-}
-
-.signInForm__passwordLabel {
-    top: 30%;
-} */
-
 .signInForm__signInButton {
     box-sizing: border-box;
     font-size: 16px;
